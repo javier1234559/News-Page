@@ -6,6 +6,7 @@
 
 html {
   font-family: "Roboto", sans-serif;
+  -webkit-tap-highlight-color: transparent;
 }
 * {
   scroll-behavior: smooth;
@@ -123,5 +124,17 @@ a.link {
 
 .bg-gradient{
   background: rgb(80,80,129);
-background: linear-gradient(162deg, rgba(80,80,129,1) 32%, rgba(9,44,105,1) 63%); 
+  background: linear-gradient(162deg, rgba(80,80,129,1) 32%, rgba(9,44,105,1) 63%); 
+}
+.bg-gradient-tiktok{
+  background:url("https://media.istockphoto.com/id/1249702917/vector/smooth-blurred-gradient-insta-background-wallpaper-style-scalable-vector-mesh-bright.jpg?s=612x612&w=0&k=20&c=2tz9p1Fk1xEs51pSRUqtZTCT3otqitZ1xBOTYRwPO9Q=") center ;
+  background-size : cover;
+} 
+.text-gradient-tiktok{
+  background:url("https://d1csarkz8obe9u.cloudfront.net/posterpreviews/neon-light-tiktok-background-video-design-template-4449f994fee083dc3a651abfe322cfb5.jpg?ts=1637031802") center ;
+  background-size : cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip:text;
+  text-fill-color:transparent;
 }

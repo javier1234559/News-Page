@@ -25,7 +25,7 @@ const ScrollBackTop = () => {
     window.addEventListener('scroll', toggleVisible);
     
     return (
-      <button className={`${visible === false ? "disappear" :"appear"} ontop bg-red p-4 fixed bottom-5 right-5 bg-purple-500 rounded-full z-[3] `} onClick={scrollToTop}>
+      <button className={`${visible === false ? "disappear" :"appear"} ontop bg-red p-4 fixed bottom-5 right-5 bg-gradient-tiktok rounded-full z-[3] `} onClick={scrollToTop}>
        <FaArrowCircleUp onClick={scrollToTop} className="text-white  "/>
       </button>
     );

@@ -9,7 +9,7 @@ const Header = () => {
   const [toggle, setToggle] = useState(true);
 
   return (
-    <header className={`${styles.flexBetween} items-center`}>
+    <header className={`lg:fixed left-[40px] right-0 bg-white w-[100%] ${styles.flexBetween} h-[80px] items-center`}>
       <div className=" w-[150px] h-[100px] cursor-pointer">
         <img
           src={logo}
@@ -21,13 +21,13 @@ const Header = () => {
         />
       </div>
       <ul className="sm:flex hidden mr-8 text-[18px]  ">
-        <li className="text-dimBlack mr-16 nav">
-          <Link to="/" className="font-roboto nav active">
+        <li className="mr-16 nav ">
+          <Link to="/" className="font-roboto active ">
             Microsoft Team
           </Link>
         </li>
-        <li className="text-dimBlack mr-16 nav">
-          <Link to="/tiktok" className="font-roboto  font-[300] ">
+        <li className="mr-16 nav ">
+          <Link to="/tiktok" className="font-roboto  font-[300] text-gradient-tiktok ">
             Tiktok
           </Link>
         </li>

@@ -1,3 +1,4 @@
 import MicrosoftTeam from "./MicrosoftTeam";
+import TikTok from "./TikTok";
 
-export { MicrosoftTeam };
+export { MicrosoftTeam ,TikTok};
