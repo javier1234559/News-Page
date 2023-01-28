@@ -1,6 +1,6 @@
 const styles = {
     wrapper :"w-full sm:px-16 px-6",
-    container: "xl:max-w-[1200px] m-auto",
+    container: "xl:max-w-[1000px] m-auto",
 
     heading: "font-Roboto font-semibold xs:text-[48px] text-[40px] text-primary xs:leading-[76.8px] leading-[66.8px] w-full",
     subheading:"font-roboto text-[30px] xs:leading-[50.8px] leading-[46.8px] w-full",

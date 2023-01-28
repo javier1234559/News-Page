@@ -1,4 +1,5 @@
 import Header from "./Header";
+import Contents from "./Contents";
 import Title from "./Title";
 import Heading from "./Heading";
 import SubHeading from "./SubHeading";
@@ -8,5 +9,6 @@ import Image from "./Image";
 import List from "./List"
 import MultipleList from "./MultipleList"
 import Footer from "./Footer";
+import ScrollBackTop from "./ScrollBackTop";
 
-export { Header, Title, Heading, SubHeading, Notes, Paragragh, Image, Footer ,List , MultipleList};
+export { Header, ScrollBackTop,Contents, Title, Heading, SubHeading, Notes, Paragragh, Image, Footer ,List , MultipleList};

@@ -1,11 +1,13 @@
-import React from 'react'
+import React from "react";
 
-const Heading = ({children, customclass}) => {
+const Heading = ({ children, customclass }) => {
   return (
-    <div className= {`mb-8 md:text-[38px] text-[30px] leading-[50px] font-semibold  ${customclass}`}>
-        <h2 className=''>{children}</h2>
-    </div>
-  )
-}
+    <h2
+      className={`my-10 md:text-[38px] text-[30px] leading-[50px] font-semibold  ${customclass}`}
+    >
+      {children}
+    </h2>
+  );
+};
 
-export default Heading
+export default Heading;
