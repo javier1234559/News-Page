@@ -11,36 +11,36 @@ html {
   scroll-behavior: smooth;
 }
 
-.title-list{
-  font-size:23px;
-  margin-bottom:0.75rem;
-  font-weight:600 !important;
-  list-style:none;
+.title-list {
+  font-size: 23px;
+  margin-bottom: 0.75rem;
+  font-weight: 600 !important;
+  list-style: none;
 }
-span{
-  color:#5758B5;
-  cursor:pointer;
-  font-weight:600;
+span {
+  color: #5758b5;
+  cursor: pointer;
+  font-weight: 600;
 }
-span.bold{
-  color:#000;
-  cursor:pointer;
-  font-weight:600;
+span.bold {
+  color: #000;
+  cursor: pointer;
+  font-weight: 600;
 }
-a.link{
-  color:#C29DC2;
-  cursor:pointer;
-  font-weight:600;
+a.link {
+  color: #c29dc2;
+  cursor: pointer;
+  font-weight: 600;
 }
-.nav{
+.nav {
   display: inline-block;
   position: relative;
-  color: #0087ca; 
+  color: #0087ca;
 }
 
-.nav:after{
-  content: '';
-  z-index:4;
+.nav:after {
+  content: "";
+  z-index: 4;
   position: absolute;
   width: 100%;
   transform: scaleX(0);
@@ -51,11 +51,77 @@ a.link{
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
-.nav:hover::after{
+.nav:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
-.nav .active{
-  transform: scaleX(1.2);
+.nav .active {
+  transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity:0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.appear {
+  display: block;
+  animation: appear 1s ease-in-out ,bounce 10s infinite ;
+}
+
+.disappear {
+  display: none;
+}
+
+.sidebar {
+  -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.bg-gradient{
+  background: rgb(80,80,129);
+background: linear-gradient(162deg, rgba(80,80,129,1) 32%, rgba(9,44,105,1) 63%); 
 }

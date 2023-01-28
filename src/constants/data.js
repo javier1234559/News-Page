@@ -35,28 +35,33 @@ const contents = [
         content:
           "3. Tạo đường link truy cập hoặc mã truy cập để cấp cho sinh viên",
       },
-      {
-        id: 4,
-        content: "4. Cách sử dụng các tính năng chính trên Microsoft Teams",
-      },
-      {
-        id: 5,
-        content:
-          "5. Cách tìm kiếm, tham gia nhóm lớp học, họp online trên Microsoft Teams",
-      },
-      {
-        id: 6,
-        content: "6. Cách chia sẻ màn hình trên Microsoft Teams",
-      },
-      {
-        id: 7,
-        content: "7. Cách chia sẻ màn hình trên Microsoft Teams",
-      },
     ],
   },
   {
     id: 4,
-    title: "III. Ưu điểm và nhược điểm của Microsoft Team",
+    title: "III. Hướng dẫn dành cho sinh viên",
+    content: [
+      {
+        id: 1,
+        content: "1. Cách sử dụng các tính năng chính trên Microsoft Teams",
+      },
+      {
+        id: 2,
+        content: "2. Cách tìm kiếm, tham gia nhóm lớp học, họp online trên Microsoft Teams",
+      },
+      {
+        id: 3,
+        content: "3. Cách chia sẻ màn hình trên Microsoft Teams",
+      },
+      {
+        id: 4,
+        content: "4. Cách tạo lịch học trên Microsoft Teams",
+      },
+    ],
+  },
+  {
+    id: 5,
+    title: "IV. Ưu điểm và nhược điểm của Microsoft Team",
     content: [
       {
         id: 1,

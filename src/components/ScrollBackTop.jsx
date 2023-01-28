@@ -1,5 +1,6 @@
-import React from 'react'
+import React, {useState}  from 'react'
 import {FaArrowCircleUp} from 'react-icons/fa';
+
 
 const ScrollBackTop = () => {
     const [visible, setVisible] = useState(false)
@@ -18,17 +19,15 @@ const ScrollBackTop = () => {
       window.scrollTo({
         top: 0, 
         behavior: 'smooth'
-        /* you can also use 'auto' behaviour
-           in place of 'smooth' */
       });
     };
     
     window.addEventListener('scroll', toggleVisible);
     
     return (
-      <div className='bg-red w-[50px] h-[50px] '>
-       <FaArrowCircleUp onClick={scrollToTop} />
-      </div>
+      <button className={`${visible === false ? "disappear" :"appear"} ontop bg-red p-4 fixed bottom-5 right-5 bg-purple-500 rounded-full z-[3] `} onClick={scrollToTop}>
+       <FaArrowCircleUp onClick={scrollToTop} className="text-white  "/>
+      </button>
     );
 }
 
