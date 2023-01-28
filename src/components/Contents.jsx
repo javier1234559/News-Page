@@ -15,7 +15,7 @@ const Contents = ({contents, color}) => {
             <ul className="pl-4 ">
               {item.content.map((subitem) => (
                 <li key={subitem.id} className="pt-1">
-                  <a href={`#${item.id}${subitem.id}`} className="nav">{subitem.content}</a>
+                  <a href={`#${item.id}${subitem.id}`} className={`nav ${color}`}>{subitem.content}</a>
                 </li>
               ))}
             </ul>
